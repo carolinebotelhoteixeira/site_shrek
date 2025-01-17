@@ -1,0 +1,93 @@
+// 1. Variáveis e Configurações Globais - SEMPRE no topo
+@use 'sass:color';
+@use 'variables' as variables;
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'characters';
+@use 'trailer';
+@use 'footer';
+
+// 2. Fontes Personalizadas (depois das importações)
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir-Bold.woff2');
+    font-weight: 700;
+}
+
+// 3. Reset Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Avenir', sans-serif;
+}
+
+body {
+  background-color: variables.$background-color;
+  color: variables.$text-color;
+  line-height: 1.6;
+}
+
+// 4. Elementos Globais
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// 5. Botões Globais
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: variables.$primary-color;
+  color: variables.$white;
+  border: none;
+
+  &:hover {
+        background-color: color.adjust(variables.$primary-color, $lightness: 10%);
+
+  }
+
+  &--secondary {
+    background-color: variables.$secondary-color;
+
+    &:hover {
+        background-color: color.adjust(variables.$primary-color, $lightness: 10%);
+    }
+  }
+}
+
+// 6. Responsividade Global
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+

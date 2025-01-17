@@ -1,0 +1,17 @@
+@use 'variables' as variables;
+
+.hero {
+  background: url('../images/shrek-background.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: variables.$white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  h2 {
+    font-size: 3em;
+  }
+}
+

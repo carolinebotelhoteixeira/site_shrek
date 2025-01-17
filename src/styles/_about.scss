@@ -1,0 +1,21 @@
+@use 'variables' as variables;
+
+#about {
+  padding: 20px;
+  text-align: center;
+
+  h2 {
+    color: variables.$primary-color;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: variables.$text-color; // <-- Ajuste aqui
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+  

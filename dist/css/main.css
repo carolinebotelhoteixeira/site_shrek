@@ -1,0 +1,182 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/shrek-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #FFFFFF;
+}
+.header nav {
+  margin-top: 10px;
+}
+.header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url("../images/shrek-background.jpg") no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero h2 {
+  font-size: 3em;
+}
+
+#about {
+  padding: 20px;
+  text-align: center;
+}
+#about h2 {
+  color: #4CAF50;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+#about p {
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.character {
+  text-align: center;
+}
+.character img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+.character img:hover {
+  transform: scale(1.1);
+}
+.character h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.character p {
+  font-size: 0.9em;
+}
+
+#trailer {
+  padding: 20px;
+  text-align: center;
+}
+#trailer h2 {
+  color: #4CAF50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#trailer iframe {
+  border: none;
+  max-width: 100%;
+  height: 315px;
+}
+
+.footer {
+  background-color: #333;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+.footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/Avenir-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/fonts/Avenir-Bold.woff2");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+}
+.button:hover {
+  background-color: rgb(109.9800796813, 192.0199203187, 113.2948207171);
+}
+.button--secondary {
+  background-color: #FFEB3B;
+}
+.button--secondary:hover {
+  background-color: rgb(109.9800796813, 192.0199203187, 113.2948207171);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .button {
+    width: 100%;
+  }
+}

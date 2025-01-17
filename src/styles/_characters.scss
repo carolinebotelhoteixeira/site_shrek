@@ -1,0 +1,27 @@
+@use 'variables' as variables;
+
+.character {
+  text-align: center;
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
